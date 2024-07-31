@@ -40,6 +40,13 @@
    padding: 0 10px;
  }
 
- 
+ /* effetti hover  */
+
+ .bgfalseLike:hover .falseLike{
+  color: #07b363;
+ }
+ .bgfalseDisLike:hover .falseDisLike{
+  color: #f30808;
+ }
 
 

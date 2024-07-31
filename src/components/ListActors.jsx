@@ -62,11 +62,11 @@ const ListActors = () => {
         <>
             <section className="bg-black py-4">
                 <div className="container-list-film pb-5 pt-5">
-                    <h2 className="text-center">Attori</h2>
+                    <h2 className="text-center pb-3 border-2 border-bottom border-warning">Attori</h2>
                     <Slider {...settings}>
                         {bestActor
                             .map((actor) => (
-                                <div key={actor.id} className="col-12 col-md-3 mt-4" >
+                                <div key={actor.id} className="col-12 col-md-3 mt-4"style={{  }} >
                                     <div className="d-flex justify-content-center">
                                         <div >
                                             <img src={`https://image.tmdb.org/t/p/w500/${actor.profile_path}`}

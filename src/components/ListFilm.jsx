@@ -82,7 +82,7 @@ const ListFilm = () => {
     <>
       <section className="bg-black pt-4">
         <div className="container-list-film">
-          <h2 className="mb-4">Film in programmazione</h2>
+          <h2 className="mb-5 border-top border-white mt-5" style={{ width:"30%" }}>Film in programmazione</h2>
           <Slider {...settings}>
             {newMovie
               .map((film) => (

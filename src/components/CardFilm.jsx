@@ -16,11 +16,11 @@ const CardFilm = ({ title, img, original_title, vote_count, id, item, handleClic
     const stars = Array.from({ length: 5 }, (_, index) => index + 1);
 
     return (
-        <div className="mx-0 mx-md-2 position-relative ">
+        <div className="mx-0 px-3 py-5 position-relative ">
             {/* card  */}
-            <div className={`card border-2 border-warning  ${item === id ? "rotate" : ""}`} id={id}>
+            <div className={`my-card ${item === id ? "rotate" : ""}`} id={id}>
                 {/* card front  */}
-                <div className="card-front bg-dark">
+                <div className="card-front bg-black ">
                     <img
                         src={`https://image.tmdb.org/t/p/w342/${img}`}
                         className="card-img-top"
@@ -35,14 +35,14 @@ const CardFilm = ({ title, img, original_title, vote_count, id, item, handleClic
                     {/* testo card  */}
                     <div className="text-white d-flex flex-column p-2 pb-3" style={{ minHeight: "150px" }}>
                         <h3 className="card-title fw-light fs-4 flex-grow-1">{title}</h3>
-                        <div className="d-flex justify-content-around" style={{ height: "50px" }}>
+                        <div className="d-flex " style={{ height: "50px" }}>
                             <CountClick vote_count={vote_count} dislike_count={dislike_count} />
                             <button onClick={() => handleClick(id)} className="btn fw-medium  bg-warning">info</button>
                         </div>
                     </div>
                 </div>
                 {/* card back  */}
-                <div className="text-white card-back bg-dark">
+                <div className="text-white card-back  bg-black">
                     <div className="p-2 h-100 d-flex flex-column">
                         <h3>Descrizione</h3>
                         <p className="fs-5">Titolo originale: <span className="fs-4 text-warning">{original_title}</span></p>

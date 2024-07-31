@@ -36,12 +36,15 @@ h2 {
   }
 }
 
-.card {
+
+.my-card {
+  border: none;
   height: 700px;
   perspective: 1000px;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   position: relative;
+  box-shadow: 0px 0px 25px 10px rgba(255,255,255,0.1);
 }
 
 .rotate {
@@ -70,5 +73,19 @@ h2 {
   overflow-x: hidden;
 }
 
-/* scrollbar  */
-
+footer{
+  background-color: #141414;
+}
+footer h3{
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+ul{
+  list-style: none;
+  padding: 0px;
+}
+footer a{
+  font-size: 1.1rem;
+  color: #646464;
+  text-decoration: none;
+}
