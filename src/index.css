@@ -1,0 +1,74 @@
+body {
+  overflow-x: hidden;
+}
+
+.container-list-film {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-span {
+  /* font-size: 60px; */
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: black;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  animation-duration: 2s;
+  color: #F3931D;
+  font-weight: 400;
+  font-size: 2.5rem;
+  animation-name: paperino;
+}
+
+@keyframes paperino {
+  from {
+    translate: -150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+
+  }
+}
+
+.card {
+  height: 700px;
+  perspective: 1000px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  background-color: #0000;
+  transform: rotateY(180deg);
+}
+
+.paragraph {
+  display: inline-block;
+  width: 100%;
+  height: 150px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/* scrollbar  */
+

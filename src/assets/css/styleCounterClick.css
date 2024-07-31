@@ -1,0 +1,45 @@
+
+
+
+ 
+ .falseLike,.falseDisLike{
+    color: white;
+   transition: 0.7s;
+
+ }
+
+ span.trueLike,.trueLike{
+    color: #07b363;
+    transition: 0.7s;
+ }
+ span.trueDisLike,.trueDisLike{
+    color: #f30808;
+    transition: 0.7s;
+ }
+ .bgtrueDisLike{
+  border:2px solid #f30808;;
+  width: auto;
+  border-radius: 30px;
+  transition: 0.7s;
+  padding: 0 10px;
+ }
+
+ .bgtrueLike{
+   border:2px solid #07b363;
+   width: auto;
+   border-radius: 30px;
+   transition: 0.7s;
+   padding: 0 10px;
+ }
+
+ .bgfalseLike,.bgfalseDisLike{
+   border:2px solid inherit;
+   background-color: rgba(0, 0, 0, 0.354);
+   transition: 0.7s;
+   width: auto;
+   padding: 0 10px;
+ }
+
+ 
+
+
