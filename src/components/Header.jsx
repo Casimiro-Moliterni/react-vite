@@ -13,7 +13,7 @@ const Header = () => {
                 <nav className="navbar navbar-expand-lg  text-secondary py-2 py-md-3">
                     <div className="container-list-film d-flex flex-wrap flex-md-nowrap align-items-center">
                         <a href="#" className="d-flex justify-content-center flex-grow-1 flex-md-grow-0">
-                            <img src="../public/images/logo.png" alt="" />
+                            <img src="/images/logo.png" alt="" />
                         </a>
                         <div className="input-group d-block d-md-flex mx-0 mx-md-5 py-2 order-md-0 flex-md-grow-1 gap-2">
                             <div className="d-flex flex-grow-1">
