@@ -24,7 +24,7 @@ const Footer = () => {
                             <ul className="d-flex flex-column gap-2">
                                 <li>
                                     <a href="#">
-                                        <div className="d-flex align-items-center">
+                                        <div className="d-flex align-items-center gap-2">
                                             <i className="fa-brands fa-facebook "></i>
                                             <span>Facebook</span>
                                         </div>
