@@ -39,12 +39,6 @@ const ListReviews = () => {
         cssEase: "linear",
         autoplay: false,
         autoplaySpeed: reviews.length > 3 ? 1000 : 0,
-        beforeChange: function (currentSlide, nextSlide) {
-            console.log("before change", currentSlide, nextSlide);
-        },
-        afterChange: function (currentSlide) {
-            console.log("after change", currentSlide);
-        }
     };
     return (
         <>
@@ -55,7 +49,7 @@ const ListReviews = () => {
                             <CardForm addReview={addReview}></CardForm>
                         </div>
                         <div className="col-12 col-md-6">
-                           { addReview.length <= 0 ?
+                           { reviews <= 0 ?
                              (<h4 className="fs-3 text-warning"></h4>)
                              :(<h4 className="fs-3 text-warning">Recensioni</h4>)
                            }
