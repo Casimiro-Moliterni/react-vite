@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 const Hero = () => {
     const heroBg = [
         // film in programmazione 
-        { id: 1, image: "../public/images/cinema-1.jpg", text: 'Vieni a provare da noi i nostri popcorn a cioccolato' },
-        { id: 2, image: "../public/images/cinema-2.jpg", text: 'Vieni a provare le nostre le nostre comodissime poltrone' },
-        { id: 3, image: "../public/images/cinema-3.jpg", text: 'Film nuovi ogni settimana' }
+        { id: 1, image: "/images/cinema-1.jpg", text: 'Vieni a provare da noi i nostri popcorn a cioccolato' },
+        { id: 2, image: "/images/cinema-2.jpg", text: 'Vieni a provare le nostre le nostre comodissime poltrone' },
+        { id: 3, image: "/images/cinema-3.jpg", text: 'Film nuovi ogni settimana' }
     ];
     const settings = {
         dots: false,
