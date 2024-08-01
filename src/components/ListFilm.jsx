@@ -73,6 +73,7 @@ const ListFilm = () => {
 
   }, [])
 
+// gestisce lo stato di item 
   const [item, setItem] = useState(null);
   const handleClick = (id) => {
     setItem((item) => (item === id ? null : id));

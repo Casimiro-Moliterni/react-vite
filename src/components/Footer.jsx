@@ -19,13 +19,13 @@ const Footer = () => {
                                 <li><a href="#">Condizioni</a></li>
                             </ul>
                         </div>
-                        <div className="col">
+                        <div className="col d-flex flex-column align-items-center">
                             <h3 className="fw-light">SOCIAL</h3>
-                            <ul className="d-flex flex-column gap-2 justify-content-center align-items-center">
+                            <ul className="d-flex flex-column gap-2">
                                 <li>
                                     <a href="#">
-                                        <div className="d-flex align-items-center gap-2">
-                                            <i className="fa-brands fa-facebook"></i>
+                                        <div className="d-flex align-items-center">
+                                            <i className="fa-brands fa-facebook "></i>
                                             <span>Facebook</span>
                                         </div>
                                     </a>
@@ -33,24 +33,24 @@ const Footer = () => {
                                 <li>
                                     <a href="#">
                                         <div className="d-flex align-items-center gap-2">
-                                            <i className="fa-brands fa-facebook"></i>
-                                            <span>Facebook</span>
+                                            <i className="fa-brands fa-instagram"></i>
+                                            <span>Instagram</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <div className="d-flex align-items-center gap-2">
-                                            <i className="fa-brands fa-facebook"></i>
-                                            <span>Facebook</span>
+                                            <i className="fa-solid fa-envelope"></i>
+                                            <span>Gmail</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <div className="d-flex align-items-center gap-2">
-                                            <i className="fa-brands fa-facebook"></i>
-                                            <span>Facebook</span>
+                                            <i className="fa-solid fa-user"></i>
+                                            <span>Registarti</span>
                                         </div>
                                     </a>
                                 </li>
@@ -143,7 +143,10 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <h4 className="text-center bg-black text-white">THE LIGHT CINEMA</h4>
+                    <div className="text-center bg-black">
+                        <h4 className=" pt-2 text-warning fs-1 fw-medium pb-2 mb-0 border-bottom ">THE LIGHT CINEMA</h4>
+                        <p className=" mb-0 py-2"><a href="#">thelightcinema@gmail.com</a></p>
+                    </div>
                 </div>
             </footer>
         </>
