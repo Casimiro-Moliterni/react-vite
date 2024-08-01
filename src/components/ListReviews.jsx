@@ -55,7 +55,10 @@ const ListReviews = () => {
                             <CardForm addReview={addReview}></CardForm>
                         </div>
                         <div className="col-12 col-md-6">
-                            <h4 className="fs-3 text-warning">Recensioni</h4>
+                           { addReview.length <= 0 ?
+                             (<h4 className="fs-3 text-warning"></h4>)
+                             :(<h4 className="fs-3 text-warning">Recensioni</h4>)
+                           }
                             <Slider {...settings} className="list-film">
                                 {reviews
                                     .map((review) => (
