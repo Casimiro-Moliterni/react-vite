@@ -21,6 +21,7 @@ const CardFilm = ({ title, img, original_title, vote_count, id, item, handleClic
             <div className={`my-card ${item === id ? "rotate" : ""}`} id={id}>
                 {/* card front  */}
                 <div className="card-front bg-black ">
+                    <div className="my-overlay"></div>
                     <img
                         src={`https://image.tmdb.org/t/p/w342/${img}`}
                         className="card-img-top"
@@ -35,9 +36,9 @@ const CardFilm = ({ title, img, original_title, vote_count, id, item, handleClic
                     {/* testo card  */}
                     <div className="text-white d-flex flex-column p-2 pb-3" style={{ minHeight: "150px" }}>
                         <h3 className="card-title fw-light fs-4 flex-grow-1">{title}</h3>
-                        <div className="d-flex " style={{ height: "50px" }}>
+                        <div className="d-flex " style={{ height: "25px" }}>
                             <CountClick vote_count={vote_count} dislike_count={dislike_count} />
-                            <button onClick={() => handleClick(id)} className="btn fw-medium  bg-warning">info</button>
+                            <button onClick={() => handleClick(id)} className="btn fw-medium  bg-warning d-flex align-items-center justify-content-center">info</button>
                         </div>
                     </div>
                 </div>
@@ -65,7 +66,7 @@ const CardFilm = ({ title, img, original_title, vote_count, id, item, handleClic
                         </div>
                         {/* btn  */}
                         <button onClick={() => handleClick(id)} className="btn fw-medium  bg-warning mb-1 mx-5">
-                        <i className="fa-regular fa-hand-point-left fs-1"></i>
+                            <i className="fa-regular fa-hand-point-left fs-1"></i>
                         </button>
                     </div>
                 </div>

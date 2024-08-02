@@ -42,23 +42,23 @@ const CountClick = ({vote_count,dislike_count}) => {
    };
    return (
       <>
-         <div className="d-flex gap-3">
+         <div className="d-flex gap-3 flex-grow-1" >
             <div className={`d-flex align-items-center justify-content-center gap-2 ${bgLike}`}>
                <button className="p-0 btn border-0"
                   onClick={() => { changeCount(true) }}
                >
-                  <i className={`fa-regular fa-thumbs-up fs-3 ${colorLike}`} ></i>
+                  <i className={`fa-regular fa-thumbs-up fs-5 ${colorLike}`} ></i>
                </button>
-               <span className={`fs-2 ${colorLike}`}>{likeCount ? likeCount : ''}</span>
+               <span className={`fs-5 ${colorLike}`}>{likeCount ? likeCount : ''}</span>
                {/* <span className="fs-2">{count ? count : ''}</span> */}
             </div>
             <div className={`d-flex align-items-center justify-content-center gap-2 ${bgDisLike}`}>
                <button className="p-0 border-0 btn h-100"
                   onClick={() => { changeCount(false) }}
                >
-                  <i className={`fa-regular fa-thumbs-down fs-3 ${colorDisLike}`}></i>
+                  <i className={`fa-regular fa-thumbs-down fs-5 ${colorDisLike}`}></i>
                </button>
-               <span className={`fs-2 ${colorDisLike}`}>{disLikeCount ? disLikeCount : ''}</span>
+               <span className={`fs-5 ${colorDisLike}`}>{disLikeCount ? disLikeCount : ''}</span>
             </div>
          </div>
       </>

@@ -46,7 +46,7 @@ const ListFilm = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          speed: 800,
+          initialSlide: 1
         }
       }
     ]
@@ -92,7 +92,6 @@ const ListFilm = () => {
                   title={film.title}
                   img={film.poster_path}
                   vote_count={film.vote_count}
-                  dislike_count={film.dislike_count}
                   original_title={film.original_title}
                   id={film.id}
                   item={item}
