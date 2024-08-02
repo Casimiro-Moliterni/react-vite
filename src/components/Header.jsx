@@ -15,7 +15,6 @@ const Header = () => {
                         <a href="#" className="d-flex justify-content-center ">
                             <img src="/images/logo.webp" alt="" />
                         </a>
-                        <h1 className=" fw-light text-white" style={{ fontSize:"4rem" }}>The Light Cinema</h1>
                         <div>
                             <button className="navbar-toggler bg-dark text-warning order-md-3 border border-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                                 {/* <span className="navbar-toggler-icon"></span> */}
