@@ -30,7 +30,7 @@ const ListReviews = () => {
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: reviews.length < 3 ? reviews.length : 4,
+        slidesToShow: reviews.length < 3 ? reviews.length : 3,
         slidesToScroll: 1,
         vertical: true,
         verticalSwiping: true,
